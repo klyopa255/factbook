@@ -1,0 +1,27 @@
+.list-unstyle() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container() {
+	width: 100%;
+	min-width: 320px;
+
+	@media @desktop-width{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+.center() {
+	margin: 0 auto;
+}
+
+.clearfix(){
+	&::after{
+		display: table;
+		content: "";
+		clear: both;
+	}
+}

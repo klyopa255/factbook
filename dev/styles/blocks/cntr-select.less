@@ -1,0 +1,28 @@
+.cntr-select {
+	display: flex;
+	border-top: 1px solid rgba(0,0,0,.5);
+	padding-top: 5px;
+	margin-bottom: 25px;
+	background: linear-gradient(transparent, rgba(255,255,255,.8)), repeating-linear-gradient(-45deg, rgba(0,0,0,.1) 1px, rgba(0,0,0,.1) 1.2px, rgba(0,0,0,.03) 3px, rgba(0,0,0,.03) 5px);
+
+	&__input {
+		border: 1px solid #cccccc;
+		border-radius: 3px;
+		color: #333333;
+		cursor: pointer;
+		display: block;
+		font-size: 12px;
+		margin: 0;
+		overflow: hidden;
+		padding: 5px 8px;
+		position: relative;
+		text-overflow: clip;
+		max-width: 250px;
+	}
+}
+
+@media @desktop-width {
+	.cntr-select {
+		justify-content: flex-end;
+	}
+}
